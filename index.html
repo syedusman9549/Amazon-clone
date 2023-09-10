@@ -5,366 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
-<style>
-    * {
-        margin: 0;
-        font-family: Arial;
-        border: border-box;
-    }
-
-
-    .navbar {
-        height: 60px;
-        background: black;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-
-    }
-
-    .logo {
-       width: 3rem; 
-    }
-    .amazonLogo{
-        width: 100%;
-    }
-
-    .nav-logo {
-        height: 50px;
-        width: 100px;
-    }
-
-    .border {
-        border: 1.5px solid transparent;
-    }
-
-    .border:hover {
-        border: 1.5px solid white;
-    }
-
-    /* Adress box Css */
-    .add-1 {
-        color: #cccccc;
-        font-size: 0.85rem;
-        margin-left: 15px;
-    }
-
-    .add-2 {
-        font-size: 1rem;
-        margin-left: 3px;
-    }
-
-    .address-icon {
-        display: flex;
-        align-items: center;
-    }
-
-    /* Search bar Css */
-    .nav-search {
-        display: flex;
-        justify-content: space-evenly;
-        width:r 620px;
-        height: 40px;
-        background: rgb(164, 43, 63);
-        border-radius: 4px;
-    }
-
-    .search-selec {
-        background-color: #f3f3f3;
-        width: 50px;
-        text-align: center;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        border: none;
-    }
-
-    .search-inpu {
-        width: 100%;
-        font-size: 1rem;
-        border: none;
-
-    }
-
-    .search-icon {
-        width: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        background-color: rgb(213, 159, 42);
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        color: black;
-
-    }
-
-    /* box 4  */
-    span {
-        font-size: 0.7rem;
-
-    }
-
-    .nav-seconD {
-        font-size: 0.85rem;
-        font-weight: bold;
-    }
-
-    .nav-search :hover {
-        border: 2px solid orange;
-    }
-
-    .nav-carT i {
-        font-size: 30px;
-    }
-
-    .nav-carT {
-        font-size: 0.85rem;
-        font-weight: 700;
-    }
-
-    /* Pannel below navbar */
-
-    .pannel {
-        height: 40px;
-        background: #222f3d;
-        display: flex;
-        color: white;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .pannel-ops p {
-        display: inline;
-        margin-left: 15px;
-    }
-
-    .pannel-ops {
-        width: 70%;
-        font-size: 1.2rem;
-    }
-
-    .pannel-Deals {
-        font-size: 0.9rem;
-        font-weight: 700;
-    }
-
-    /* Hero sec Css */
-
-    .hero-sec {
-        background-image: url(/hero_image.jpg);
-        height: 400px;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
-    .hero-msg {
-        background-color: white;
-        color: black;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1rem;
-        width: 80%;
-        margin-bottom: 25px;
-
-
-    }
-
-    .hero-msg a {
-        color: #007185;
-    }
-
-    /* shop sec Css */
-    .box {
-        /* border: 2px solid black; */
-        height: 400px;
-        width: 23%;
-        background-color: white;
-        padding: 20px 0px 15px;
-        margin-top: 15px;
-    }
-
-    .shop-sec {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        background-color: #e2e7e6;
-    }
-
-    .box-img1 {
-        background-image: url(/box1_image.jpg);
-        height: 300px;
-        background-size: cover;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    } .box-img2 {
-        background-image: url(/box2_image.jpg);
-        height: 300px;
-        background-size: cover;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    }
-    .box-img3 {
-        background-image: url(/box3_image.jpg);
-        height: 300px;
-        background-size: cover;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    }
-    .box-img4 {
-        background-image: url(/box4_image.jpg);
-        height: 300px;
-        background-size: cover;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    }
-    .box-img5 {
-        background-image: url(/box5_image.jpg);
-        height: 300px;
-        background-size: cover;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    }
-    .box-img6 {
-        background-image: url(/box6_image.jpg);
-        height: 300px;
-        background-size: cover;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    }
-    .box-img7 {
-        background-image: url(/box7_image.jpg);
-        height: 300px;
-        background-size: cover;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    }
-    .box-img8 {
-        background-image: url(/box8_image.jpg);
-        height: 300px;
-        background-size: cover;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    }
-    
-    
-    .box-con {
-        margin-right: 10px;
-        margin-left: 10px;
-
-    }
-
-    .box-con p {
-        color: #007186;
-    }
-    
-    
-    /* footer CSS */
-    footer{
-        margin-top: 15px;
-    }
-    .foot-pannel1{
-        background-color: #37475a;
-        color: white;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.85rem;
-    }
-
-    .foot-pannel2{
-        background-color: #222f3d;
-        color: white;
-        height: 300px;
-        display: flex;
-        justify-content: space-evenly;
-
-    }
-    ul{
-        margin-top: 20px;
-    }
-ul a {
-    display: block;
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: #dddddd;
-}
-p{
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.foot-pannel3{
-    background-color: #222f3d;
-    color: white;
-    border-top: 0.5px solid white;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    
-}
-
-.logo{
-    background-image: url(/extensions/Css/full-rep-img/amazon_logo.png);
-        /* height: 50px; */
-        width: 100px;
-        background-size: cover;
-}
-.foot-pannel4{
-    background-color: #0f1111;
-    color: white;
-    height: 75px;
-    /* display: flex;
-    align-items: center; */
-
-}
-.pages{
-font-size: 1rem;
-text-align: center;
-padding-top: 25px;
-}
-.copyrights{
-    padding-top: 5px;
-    font-size: 1rem;
-    text-align: center;
-
-
-}
-
-
-    
-
-
-    
-</style>
-
 <body>
     <header>
         <div class="navbar">
             <div class="nav-logo border">
-                
+
                 <div class="logo">
                     <img class="amazonLogo" src="/amazon_logo.png" alt="">
                 </div>
@@ -437,7 +87,7 @@ padding-top: 25px;
             <div class="box-con">
                 <h2>Cloths</h2>
                 <div class="box-img1">
-                  
+
                 </div>
                 <P>See More!</P>
             </div>
@@ -446,7 +96,7 @@ padding-top: 25px;
             <div class="box-con">
                 <h2>Healh & personal Carfe</h2>
                 <div class="box-img2">
-                   
+
                 </div>
                 <P>See More!</P>
             </div>
@@ -455,7 +105,7 @@ padding-top: 25px;
             <div class="box-con">
                 <h2>Furnire</h2>
                 <div class="box-img3">
-                    
+
                 </div>
                 <P>See More!</P>
             </div>
@@ -464,7 +114,7 @@ padding-top: 25px;
             <div class="box-con">
                 <h2>Mobile phones</h2>
                 <div class="box-img4">
-                
+
                 </div>
                 <P>See More!</P>
             </div>
@@ -473,7 +123,7 @@ padding-top: 25px;
             <div class="box-con">
                 <h2>Makeup </h2>
                 <div class="box-img5">
-                   
+
                 </div>
                 <P>See More!</P>
             </div>
@@ -482,7 +132,7 @@ padding-top: 25px;
             <div class="box-con">
                 <h2>Animals</h2>
                 <div class="box-img6">
-                    
+
                 </div>
                 <P>See More!</P>
             </div>
@@ -491,7 +141,7 @@ padding-top: 25px;
             <div class="box-con">
                 <h2>Healh & personal Carfe</h2>
                 <div class="box-img7">
-                    
+
                 </div>
                 <P>See More!</P>
             </div>
@@ -500,7 +150,7 @@ padding-top: 25px;
             <div class="box-con">
                 <h2>Healh & personal Carfe</h2>
                 <div class="box-img8">
-                    
+
                 </div>
                 <P>See More!</P>
             </div>
@@ -520,7 +170,8 @@ padding-top: 25px;
                 <a>Invest Relation</a>
                 <a>Amazon Devices</a>
                 <a>Amazon Science</a>
-            </ul><ul>
+            </ul>
+            <ul>
                 <p>Get to know us</p>
                 <a>Careers</a>
                 <a>Blogs</a>
@@ -528,7 +179,8 @@ padding-top: 25px;
                 <a>Invest Relation</a>
                 <a>Amazon Devices</a>
                 <a>Amazon Science</a>
-            </ul><ul>
+            </ul>
+            <ul>
                 <p>Get to know us</p>
                 <a>Careers</a>
                 <a>Blogs</a>
@@ -536,7 +188,8 @@ padding-top: 25px;
                 <a>Invest Relation</a>
                 <a>Amazon Devices</a>
                 <a>Amazon Science</a>
-            </ul><ul>
+            </ul>
+            <ul>
                 <p>Get to know us</p>
                 <a>Careers</a>
                 <a>Blogs</a>
@@ -549,8 +202,8 @@ padding-top: 25px;
         </div>
         <div class="foot-pannel3">
 
-            
-            
+
+
             <div class="logo">
 
             </div>
